@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-skinCamera"
+        version="0.4.2">
+    
+    <name>TDCamera</name>
+    
+    <description>This plugin for Cordova and PhoneGap allows you to check if an app is installed. It requires an URI Scheme (iOS) or a Package Name (Android).</description>
+    
+    <keywords>Cordova,PhoneGap,plugin,app,availability,installed, URIScheme,URI,Scheme,PackageName,Package,Name,iOS,Android</keywords>
+    
+    <repo>https://github.com/ohh2ahh/AppAvailability.git</repo>
+    <issue>https://github.com/ohh2ahh/AppAvailability/issues</issue>
+    
+    <license>MIT</license>
+    
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    
+    <js-module src="www/TDCamera.js" name="TDCamera">
+        <clobbers target="tdcamera" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file  target="config.xml" parent="/*">
+            <feature  name="TDcamera">
+                <param  name="ios-package"  value="TDcamera"/>
+            </feature>
+        </config-file>
+        
+        <source-file src="src/ios/TDCamera.m" />
+        <header-file src="src/ios/TDCamera.h" />
+        <source-file src="src/ios/WYCaptureController.m" />
+        <header-file src="src/ios/WYCaptureController.h" />
+        <source-file src="src/ios/WYTopImgBtn.m" />
+        <header-file src="src/ios/WYTopImgBtn.h" />
+        <source-file src="src/ios/WYVideoCaptureController.m" />
+        <header-file src="src/ios/WYVideoCaptureController.h" />
+        <source-file src="src/ios/WYVideoTimeView.m" />
+        <header-file src="src/ios/WYVideoTimeView.h" />
+        <source-file src="src/ios/LX_layoutAttributes.m" />
+        <header-file src="src/ios/LX_layoutAttributes.h" />
+        <source-file src="src/ios/NSTimer+Addtion.m" />
+        <header-file src="src/ios/NSTimer+Addtion.h" />
+        <source-file src="src/ios/ProgressView.m" />
+        <header-file src="src/ios/ProgressView.h" />
+        <source-file src="src/ios/UIView+AutoLayoutViews.m" />
+        <header-file src="src/ios/UIView+AutoLayoutViews.h" />
+        <source-file src="src/ios/UIView+Extension.m" />
+        <header-file src="src/ios/UIView+Extension.h" />
+        <source-file src="src/ios/TDMediaFileManage.m" />
+        <header-file src="src/ios/TDMediaFileManage.h" />
+        <resource-file src="src/ios/button_camera_screen.png" />
+        <resource-file src="src/ios/button_camera_screen@2x.png" />
+        <resource-file src="src/ios/button_camera_screen@3x.png" />
+        <resource-file src="src/ios/button_video_recording_default.png" />
+        <resource-file src="src/ios/button_video_recording_default@2x.png" />
+        <resource-file src="src/ios/button_video_recording_default@3x.png" />
+        <resource-file src="src/ios/button_video_screen_stop.png" />
+        <resource-file src="src/ios/button_video_screen_stop@2x.png" />
+        <resource-file src="src/ios/button_video_screen_stop@3x.png" />
+    </platform>
+    
+</plugin>
