@@ -8,11 +8,11 @@
 
 #import "TDExit.h"
 
-@interface TDCamera ()
+@interface TDExit ()
 
 @end
 
-@implementation TDCamera
+@implementation TDExit
 
 - (void)tdExit:(CDVInvokedUrlCommand*)command{
     
