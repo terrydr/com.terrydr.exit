@@ -7,7 +7,7 @@
 //
 
 #import "TDExit.h"
-#import "TDExitObj.h"
+#import "TDExitViewController.h"
 
 @interface TDExit ()
 
@@ -16,8 +16,10 @@
 @implementation TDExit
 
 - (void)tdExit:(CDVInvokedUrlCommand*)command{
-    TDExitObj *exitObj = [[TDExitObj alloc] init];
-    [exitObj exitMethod];
+    TDExitViewController *exitVc = [[TDExitViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:exitVc];
+    [self.viewController presentViewController:nav animated:YES completion:^{
+    }];
 }
 
 @end

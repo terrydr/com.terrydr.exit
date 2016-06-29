@@ -33,8 +33,8 @@
         
         <source-file src="src/ios/TDExit.m" />
         <header-file src="src/ios/TDExit.h" />
-        <source-file src="src/ios/TDExitObj.m" />
-        <header-file src="src/ios/TDExitObj.h" />
+        <source-file src="src/ios/TDExitViewController.m" />
+        <header-file src="src/ios/TDExitViewController.h" />
     </platform>
     
 	<platform name="android">
