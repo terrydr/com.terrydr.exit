@@ -9,6 +9,7 @@
 用于：泰瑞
 
 安装：cordova plugin add https://github.com/terrydr/com.terrydr.exit.git
+
 卸载：cordova plugin rm com.terrydr.exit
 
 示例：
