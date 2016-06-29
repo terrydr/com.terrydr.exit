@@ -7,6 +7,7 @@
 //
 
 #import "TDExit.h"
+#import "TDExitObj.h"
 
 @interface TDExit ()
 
@@ -15,12 +16,8 @@
 @implementation TDExit
 
 - (void)tdExit:(CDVInvokedUrlCommand*)command{
-    
-    NSArray *arr = [NSArray array];
-    [arr objectAtIndex:1];
-    
-    CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
+    TDExitObj *exitObj = [[TDExitObj alloc] init];
+    [exitObj exitMethod];
 }
 
 @end
