@@ -14,4 +14,4 @@
 
 示例：
 
-TdExit.tdExit()
+tdExit.tdExit()
