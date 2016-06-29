@@ -37,4 +37,14 @@
         <header-file src="src/ios/TDExitObj.h" />
     </platform>
     
+	<platform name="android">
+        <config-file  target="res/xml/config.xml" parent="/*">
+            <feature  name="TDExit">
+                <!--JREye:继承CDVPlugin的类名 -->
+                <param  name="android-package"  value="com.terrydr.exitapp.ExitAPP_plugin_intent"/>
+            </feature>
+        </config-file>
+		<source-file src="src/android/com/terrydr/exitapp/ExitAPP_plugin_intent.java"
+                     target-dir="src/com/terrydr/exitapp"/>					 
+    </platform>
 </plugin>
