@@ -4,8 +4,6 @@ cordova-plugin-tdExit
 
 插件名称：cordova-plugin-tdExit
 
-功能描述：
-
 支持平台：iOS  Android
 
 安装：cordova plugin add https://github.com/terrydr/com.terrydr.exit.git
